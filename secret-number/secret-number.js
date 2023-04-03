@@ -25,6 +25,7 @@ function isInt(str) {
   return /^[0-9]+$/.test(str);
 }
 
+//otra forma de hacerlo
 const isInt2 = (str) => {
   const integer = parseInt(str);
   if (Number.isNaN(integer)) {
@@ -69,7 +70,7 @@ async function playGame() {
 
     if (numberFromConsole === secretNumber) {
       rl.close();
-      console.log("Enhorabuena maquinote. Has acertado");
+      console.log("Enhorabuena! Has acertado");
     } else {
       if (numberFromConsole < secretNumber) {
         console.log("El número secreto es mayor. Prueba otra vez.");
